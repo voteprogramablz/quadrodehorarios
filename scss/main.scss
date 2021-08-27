@@ -1,0 +1,116 @@
+/* variables */
+$widthContent: 1440px;
+
+/* Components */
+@import 'components/_listAulas.scss';
+@import 'components/_fontStyle.scss';
+@import 'components/_tab.scss';
+@import 'components/_form.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.float-right {float: right;}
+.float-left {float: left;}
+
+body{
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(30,50,80);
+  background: linear-gradient(90deg, rgba(30,50,80,1) 0%, rgba(38,56,83,1) 10%, rgba(55,71,96,1) 28%, rgba(86,99,119,1) 55%, rgba(139,146,158,1) 86%);
+  
+  .content{
+    width: $widthContent;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (max-width: $widthContent) {
+      max-width: 90%;
+    }
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.grid{
+  display: grid;
+}
+
+.alignItem {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.alignVertical{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.alignVerticalEnd{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.alignVerticalStart{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.box-shadow{
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
+}
+
+.display_none {
+    display: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+
+    * {
+        background-color: grey;
+        pointer-events: none;
+    }
+}
+
+.color-white{
+  color: white;
+}
+
+.mr-1{margin-right: 1%;}
+.mt-2_5{margin-top: 2.5%;}
+.mt-5{margin-top: 5%;}
+.mt-10{margin-top: 10%;}
+
+.p-10{padding: 20px;}

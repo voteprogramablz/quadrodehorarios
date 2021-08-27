@@ -1,0 +1,16 @@
+{
+  "name": "quadrodehorarios",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voteprogramablz/quadrodehorarios.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voteprogramablz/quadrodehorarios/issues"
+  },
+  "homepage": "https://github.com/voteprogramablz/quadrodehorarios#readme",
+  "dependencies": {},
+  "scripts": {
+    "start": "php -S localhost:8000 -d short_open_tag=true -d display_errors=true"
+  }
+}

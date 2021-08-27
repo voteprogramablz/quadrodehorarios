@@ -1,0 +1,16 @@
+.listAulas {
+  background-color: #1E3150;  
+  
+  &__aula {
+    background-color: #fff;
+    
+    margin-bottom: 20px;
+    
+    img {
+      width: 90%;
+      margin: 10px auto;
+      
+    }
+  }
+}
+
